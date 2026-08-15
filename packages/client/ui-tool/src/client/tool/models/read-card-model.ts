@@ -13,8 +13,29 @@
  * until the result arrives.
  * @module
  */
-import type { ReadBlockLine, ReadBlockProps } from '@deepseek-ai/dsh-client-ui-primitives'
+import type { ReadBlockLabels, ReadBlockLine, ReadBlockProps } from '@deepseek-ai/dsh-client-ui-primitives'
+import type { TranslateNS } from '@deepseek-ai/dsh-client-ui-slots'
 import { relativizeToCwd, type ToolCallBlock } from './tool-call-model.ts'
+
+/**
+ * Build the ReadBlock display copy from the conversation locale seat — the one
+ * place the primitive's label surface pairs with this package's dictionary,
+ * shared by every read render site (chat row, details panel).
+ * @param t - the render site's conversation locale seat.
+ * @returns the full label set for {@link ReadBlockProps}'s `labels`.
+ */
+export function readBlockLabels(t: TranslateNS<'conversation'>): ReadBlockLabels {
+  return {
+    count: (shown, total) => t('read.count', { shown, total }),
+    copy: t('copy'),
+    copied: t('copied'),
+    collapseAria: t('read.collapseAria'),
+    collapse: t('collapse'),
+    expandAria: hidden => t('read.expandAria', { n: hidden }),
+    // The visible expand text is the shared ellipsis line ("… 其余 {n} 行").
+    expand: hidden => t('search.expand', { n: hidden }),
+  }
+}
 
 /**
  * Content lines the chat row's resident read body shows before collapsing the

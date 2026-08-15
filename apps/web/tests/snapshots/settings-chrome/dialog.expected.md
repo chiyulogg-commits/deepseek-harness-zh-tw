@@ -26,8 +26,8 @@
     - text: Workspace Write
     - img
   - text: 语言
-  - button "中文":
-    - text: 中文
+  - button "简体中文":
+    - text: 简体中文
     - img
   - text: 外观
   - button "浅色":

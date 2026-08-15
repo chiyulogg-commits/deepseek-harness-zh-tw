@@ -399,7 +399,7 @@ describe('web e2e: settings modal and General preferences', () => {
     const zhDialog = page.getByRole('dialog', { name: '设置' })
     await zhDialog.waitFor({ timeout: 10_000 })
     // The Language selector pill shows the active locale's own name.
-    const selector = zhDialog.getByRole('button', { name: '中文' })
+    const selector = zhDialog.getByRole('button', { name: '简体中文' })
     expect(await selector.getAttribute('aria-haspopup')).toBe('menu')
     await selector.click()
     await page.getByRole('menuitem', { name: 'English' }).click()
@@ -444,11 +444,24 @@ describe('web e2e: settings modal and General preferences', () => {
 
     await enTrigger.click()
     await page.getByRole('dialog', { name: 'Settings' }).getByRole('button', { name: 'English' }).click()
-    await page.getByRole('menuitem', { name: '中文' }).click()
+    await page.getByRole('menuitem', { name: '简体中文' }).click()
     await page.getByRole('dialog', { name: '设置' }).waitFor({ timeout: 10_000 })
     expect(await page.evaluate(() => localStorage.getItem('dsh.locale'))).toBeNull()
     await expect.poll(async () => readFile(join(scaffold.harnessHome, 'settings.yaml'), 'utf8'), { timeout: 5_000 })
       .toMatch(/locale:\n\s+preference: zh/)
+
+    // The Taiwan Traditional locale is selectable and persists the same way.
+    await page.getByRole('dialog', { name: '设置' }).getByRole('button', { name: '简体中文' }).click()
+    await page.getByRole('menuitem', { name: '繁體中文' }).click()
+    await page.getByRole('dialog', { name: '設定' }).waitFor({ timeout: 10_000 })
+    expect(await page.evaluate(() => localStorage.getItem('dsh.locale'))).toBeNull()
+    await expect.poll(async () => readFile(join(scaffold.harnessHome, 'settings.yaml'), 'utf8'), { timeout: 5_000 })
+      .toMatch(/locale:\n\s+preference: zh-TW/)
+    // Restore the product default so the shared page state (and the other
+    // specs' 设置-anchored selectors + goldens) see 简体中文 again.
+    await page.getByRole('dialog', { name: '設定' }).getByRole('button', { name: '繁體中文' }).click()
+    await page.getByRole('menuitem', { name: '简体中文' }).click()
+    await page.getByRole('dialog', { name: '设置' }).waitFor({ timeout: 10_000 })
     await page.keyboard.press('Escape')
     expect(tripwire.pageErrors).toEqual([])
   }, 90_000)

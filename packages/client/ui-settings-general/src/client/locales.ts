@@ -10,6 +10,15 @@ export const zh = {
   'general.nav': '通用设置',
 } satisfies Record<string, string>
 
+export const zhTw = {
+  'trigger': '設定',
+  'title': '設定',
+  'close': '關閉',
+  'openDocument': '開啟設定檔',
+  'openDocument.error': '無法開啟設定檔',
+  'general.nav': '通用設定',
+} satisfies Record<string, string>
+
 /** The settings namespace key union. */
 export type SettingsKey = keyof typeof zh
 

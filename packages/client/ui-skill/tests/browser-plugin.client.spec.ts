@@ -131,6 +131,13 @@ describe('apply', () => {
           'row.instructions': '说明',
           'menu.userOnly': '仅用户',
         },
+        'zh-TW': {
+          'row.running': '正在載入 skill',
+          'row.failed': 'skill 載入失敗',
+          'row.stopped': 'skill 載入已中止',
+          'row.instructions': '說明',
+          'menu.userOnly': '僅使用者',
+        },
         en: {
           'row.running': 'Loading skill',
           'row.failed': 'Skill load failed',

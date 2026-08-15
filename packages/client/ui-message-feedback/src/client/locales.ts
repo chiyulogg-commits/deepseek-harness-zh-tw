@@ -16,6 +16,21 @@ export const zh = {
   'error.generic': '反馈保存失败',
 } satisfies Record<string, string>
 
+export const zhTw = {
+  'action.like': '好的回答',
+  'action.likeActive': '取消標記',
+  'action.dislike': '有問題的回答',
+  'action.dislikeActive': '取消標記',
+  'note.open': '補充說明',
+  'note.placeholder': '這條回答哪裡好，或哪裡有問題？（可選）',
+  'note.save': '儲存',
+  'note.cancel': '取消',
+  'note.aria': '反饋說明',
+  'error.conflict': '這條反饋已在別處改動，已顯示最新狀態',
+  'error.load': '反饋狀態載入失敗',
+  'error.generic': '反饋儲存失敗',
+} satisfies Record<string, string>
+
 /** The feedback namespace key union. */
 export type MessageFeedbackKey = keyof typeof zh
 

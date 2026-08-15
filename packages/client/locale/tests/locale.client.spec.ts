@@ -192,10 +192,20 @@ describe('LocaleRuntime', () => {
     expect(host.listenerCount()).toBe(0)
   })
 
-  it('opens provisionally in the browser language, matching regional variants on their primary subtag', () => {
+  it('opens provisionally in the browser language, mapping script and region variants to the shipped locales', () => {
     stubLanguages('en-GB', 'zh-CN')
     expect(make().svc.getLocale().active).toBe('en')
+    // Traditional script / Taiwan region variants land on the Taiwan locale.
     stubLanguages('zh-Hant-TW')
+    expect(make().svc.getLocale().active).toBe('zh-TW')
+    stubLanguages('zh-TW', 'en-US')
+    expect(make().svc.getLocale().active).toBe('zh-TW')
+    stubLanguages('zh-HK')
+    expect(make().svc.getLocale().active).toBe('zh-TW')
+    // Simplified variants stay on the mainland locale.
+    stubLanguages('zh-Hans-CN')
+    expect(make().svc.getLocale().active).toBe('zh')
+    stubLanguages('zh-CN')
     expect(make().svc.getLocale().active).toBe('zh')
     // An unshipped language walks the list to the first one this app ships.
     stubLanguages('fr-FR', 'en-US')
@@ -230,10 +240,11 @@ describe('LocaleRuntime', () => {
     expect(svc.getLocale().active).toBe('zh')
   })
 
-  it('exposes the two shipped locales with self-described labels', () => {
+  it('exposes the three shipped locales with self-described labels', () => {
     const { svc } = make()
     expect(svc.getLocale().locales).toEqual([
-      { id: 'zh', label: '中文' },
+      { id: 'zh', label: '简体中文' },
+      { id: 'zh-TW', label: '繁體中文' },
       { id: 'en', label: 'English' },
     ])
   })

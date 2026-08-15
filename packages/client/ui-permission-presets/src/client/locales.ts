@@ -13,6 +13,18 @@ export const zh = {
   'confirm.enable': '启用 Full access',
 } satisfies Record<string, string>
 
+export const zhTw = {
+  'title': '權限',
+  'description': '選擇新會話的預設權限模式',
+  'loading': '載入中',
+  'unavailable': '無法使用',
+  'confirm.title': '確認啟用 Full access？',
+  'confirm.description': '啟用 Full access 後，新會話將減少確認步驟，並且可以直接執行更多操作，包括敏感操作、檔案修改或外部指令。僅建議在你信任後續任務時使用。',
+  'confirm.acknowledge': '我已瞭解風險，並願意繼續',
+  'confirm.cancel': '取消',
+  'confirm.enable': '啟用 Full access',
+} satisfies Record<string, string>
+
 /** The settings.permission namespace key union. */
 export type PermissionSettingsKey = keyof typeof zh
 
@@ -36,6 +48,14 @@ export const accessZh = {
   'confirm.acknowledge': '我已了解风险，并愿意继续',
   'confirm.cancel': '取消',
   'confirm.enable': '启用 Full access',
+} satisfies Record<string, string>
+
+export const accessZhTw = {
+  'confirm.title': '確認啟用 Full access？',
+  'confirm.description': '啟用 Full access 後，agent 將減少確認步驟，並且可以直接執行更多操作，包括敏感操作、檔案修改或外部指令。僅建議在你信任當前任務時使用。',
+  'confirm.acknowledge': '我已瞭解風險，並願意繼續',
+  'confirm.cancel': '取消',
+  'confirm.enable': '啟用 Full access',
 } satisfies Record<string, string>
 
 /** Current-session popup-gate key union. */

@@ -40,6 +40,42 @@ export const zh = {
   'readonly.body': '父会话当前不在线，重新打开父会话后即可继续发送消息。',
 } as const
 
+export const zhTw = {
+  'diagnostic.corrupt': '會話記錄損壞',
+  'diagnostic.unsupported': '子代理記錄版本不受支援',
+  'diagnostic.unavailable': '會話記錄暫無法使用',
+  'duration.seconds': '{seconds}秒',
+  'duration.minutes': '{minutes}分{seconds}秒',
+  'duration.hours': '{hours}小時{minutes}分{seconds}秒',
+  'duration.days': '{days}天',
+  'duration.daysHours': '{days}天{hours}小時',
+  'duration.months': '約{months}個月',
+  'duration.monthsDays': '約{months}個月{days}天',
+  'duration.years': '約{years}年',
+  'duration.yearsMonths': '約{years}年{months}個月',
+  'duration.exactDays': '{days}天{hours}小時{minutes}分{seconds}秒',
+  'duration.exactTitle': '總活躍耗時：{duration}',
+  'loading.label': '正在載入子代理…',
+  'loading.aria': '正在載入子代理',
+  'load.error': '無法載入子代理',
+  'retry': '重試',
+  'mode.oneShot': '一次性',
+  'mode.continuable': '可繼續',
+  'activity.running': '正在執行',
+  'activity.inactive': '當前未執行',
+  'branch.collapse': '收起 {label} 的下級子代理',
+  'branch.expand': '展開 {label} 的下級子代理',
+  'count.total.one': '{count} 個子代理',
+  'count.total.other': '{count} 個子代理',
+  'count.running.one': '{count} 個子代理，正在執行',
+  'count.running.other': '{count} 個子代理，正在執行',
+  'tree.aria': '子代理會話',
+  'readonly.oneShot.title': '一次性子代理記錄',
+  'readonly.title': '此子代理暫時唯讀',
+  'readonly.oneShot.body': '一次性任務不支援後續訊息，可在這裡檢視完整執行記錄。',
+  'readonly.body': '父會話當前不線上，重新開啟父會話後即可繼續傳送訊息。',
+} as const
+
 /** English dictionary, key-identical to the Chinese source of truth. */
 export const en: Record<SubagentKey, string> = {
   'diagnostic.corrupt': 'corrupted session record',
@@ -78,4 +114,5 @@ export const en: Record<SubagentKey, string> = {
 }
 
 /** Key domain of the `subagent` namespace (zh is the source of truth). */
+
 export type SubagentKey = keyof typeof zh

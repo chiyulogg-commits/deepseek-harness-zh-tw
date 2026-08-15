@@ -13,6 +13,14 @@ export const zh = {
   'suggestions.aria': '触发候选建议',
 } satisfies Record<string, string>
 
+export const zhTw = {
+  'command': '指令',
+  'skill': '技能',
+  'subagent': '子代理',
+  'loading': '正在載入…',
+  'suggestions.aria': '觸發候選建議',
+} satisfies Record<string, string>
+
 /** The slash.menu namespace key union. */
 export type MenuKey = keyof typeof zh
 
