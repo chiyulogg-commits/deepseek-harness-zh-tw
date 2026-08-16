@@ -1,10 +1,26 @@
 # DeepSeek Harness 繁體中文版（zh-TW）／Traditional Chinese (Taiwan) Edition
 
+[![License: MIT](https://img.shields.io/github/license/chiyulogg-commits/deepseek-harness-zh-tw)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/chiyulogg-commits/deepseek-harness-zh-tw)](https://github.com/chiyulogg-commits/deepseek-harness-zh-tw)
+[![Maintenance](https://img.shields.io/badge/maintenance-actively%20maintained-brightgreen)](https://github.com/chiyulogg-commits/deepseek-harness-zh-tw)
+
+**讓 DSH 說你的語言。** 台灣繁體中文語系擴充版 — 設定一鍵切換、瀏覽器自動偵測、25 個套件全量中文化。
+
+**Speak your language.** Taiwan Traditional Chinese edition of DeepSeek Harness — switch in Settings, auto-detected from your browser, fully localized across 25 UI packages.
+
 基於 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 官方版本的**台灣繁體中文語系擴充版**：在原有「简体中文 / English」之外新增「**繁體中文（台灣用語）**」語系選項，瀏覽器 `zh-TW` / `zh-Hant` / `zh-HK` / `zh-MO` 自動偵測切換，25 個 Web UI 套件全量中文化。
 
 This is an extended edition of [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (dsh) — the open-source agent harness by DeepSeek AI — with a **Traditional Chinese (Taiwan) locale** added as a third language option (简体中文 / 繁體中文 / English), automatic `zh-TW` / `zh-Hant` / `zh-HK` / `zh-MO` browser detection, and fully localized UI copy using Taiwan terminology across 25 UI packages.
 
 ---
+
+## 介面截圖 Screenshot
+
+語系選單切換至「繁體中文（台灣用語）」：
+
+![繁體中文介面 — 設定對話框的語言選擇器](docs/screenshot-zh-tw.png)
+
+The locale menu in the Settings dialog, switched to 繁體中文.
 
 ## 關鍵字 Keywords
 
@@ -53,13 +69,13 @@ Open http://127.0.0.1:3080 after startup → Settings → Language → 繁體中
 
 - release tag：`0.1.0-rc.5+zh-TW.1`（對應 DSH `0.1.0-rc.5`；zh-TW 版第一版）
 - 依 tag 安裝：`git clone --branch 0.1.0-rc.5+zh-TW.1 https://github.com/chiyulogg-commits/deepseek-harness-zh-tw.git`
-- GitHub topics：`dsh` `dsh-plugin` `deepseek-harness` `zh-tw` `traditional-chinese` `localization` `i18n` `taiwan`——其中 `dsh` 與 `dsh-plugin` 是 DSH 生態推薦清單（awesome-deepseek-harness）索引用的官方建議 topic
+- GitHub topics（20 個）：`dsh` `dsh-plugin` `deepseek-harness` `zh-tw` `traditional-chinese` `localization` `i18n` `taiwan` `chinese-localization` `ai-agent` `agent-harness` `deepseek` `language-pack` `translation` `open-source` `mit-license` `llm` `web-ui` `harness` `ui`——其中 `dsh` 與 `dsh-plugin` 是 DSH 生態推薦清單（awesome-deepseek-harness）索引用的官方建議 topic
 
 This edition is based on DSH `0.1.0-rc.5` (upstream commit `47f943859b`); the release tag prefix states the DSH version it corresponds to:
 
 - Release tag: `0.1.0-rc.5+zh-TW.1` (corresponds to DSH `0.1.0-rc.5`; first zh-TW edition)
 - Install by tag: `git clone --branch 0.1.0-rc.5+zh-TW.1 https://github.com/chiyulogg-commits/deepseek-harness-zh-tw.git`
-- GitHub topics: `dsh` `dsh-plugin` `deepseek-harness` `zh-tw` `traditional-chinese` `localization` `i18n` `taiwan` — `dsh` and `dsh-plugin` are the topics the DSH ecosystem lists (awesome-deepseek-harness) index for discovery
+- GitHub topics (20): `dsh` `dsh-plugin` `deepseek-harness` `zh-tw` `traditional-chinese` `localization` `i18n` `taiwan` `chinese-localization` `ai-agent` `agent-harness` `deepseek` `language-pack` `translation` `open-source` `mit-license` `llm` `web-ui` `harness` `ui` — `dsh` and `dsh-plugin` are the topics the DSH ecosystem lists (awesome-deepseek-harness) index for discovery
 
 ## 上游與授權 Upstream & License
 
