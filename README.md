@@ -1,8 +1,6 @@
 # DeepSeek Harness 繁體中文版（zh-TW）／Traditional Chinese (Taiwan) Edition
 
-[![License: MIT](https://img.shields.io/github/license/chiyulogg-commits/deepseek-harness-zh-tw)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/chiyulogg-commits/deepseek-harness-zh-tw)](https://github.com/chiyulogg-commits/deepseek-harness-zh-tw)
-[![Maintenance](https://img.shields.io/badge/maintenance-actively%20maintained-brightgreen)](https://github.com/chiyulogg-commits/deepseek-harness-zh-tw)
+[![License: MIT](https://img.shields.io/github/license/chiyulogg-commits/deepseek-harness-zh-tw)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/chiyulogg-commits/deepseek-harness-zh-tw)](https://github.com/chiyulogg-commits/deepseek-harness-zh-tw) [![Maintenance](https://img.shields.io/badge/maintenance-actively%20maintained-brightgreen)](https://github.com/chiyulogg-commits/deepseek-harness-zh-tw)
 
 **讓 DSH 說你的語言。** 台灣繁體中文語系擴充版 — 設定一鍵切換、瀏覽器自動偵測、25 個套件全量中文化。
 
