@@ -41,7 +41,7 @@ export const zhTw = {
   active: '已掛載',
   failed: '掛載失敗',
   unloading: '解除安裝中',
-} satisfies Record<string, string>
+} satisfies Record<PluginInventoryLocaleKey, string>
 
 /** Plugin inventory locale key union. */
 export type PluginInventoryLocaleKey = keyof typeof zh

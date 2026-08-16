@@ -23,7 +23,7 @@ export const zhTw = {
   'confirm.acknowledge': '我已瞭解風險，並願意繼續',
   'confirm.cancel': '取消',
   'confirm.enable': '啟用 Full access',
-} satisfies Record<string, string>
+} satisfies Record<PermissionSettingsKey, string>
 
 /** The settings.permission namespace key union. */
 export type PermissionSettingsKey = keyof typeof zh
@@ -56,7 +56,7 @@ export const accessZhTw = {
   'confirm.acknowledge': '我已瞭解風險，並願意繼續',
   'confirm.cancel': '取消',
   'confirm.enable': '啟用 Full access',
-} satisfies Record<string, string>
+} satisfies Record<PermissionAccessKey, string>
 
 /** Current-session popup-gate key union. */
 export type PermissionAccessKey = keyof typeof accessZh

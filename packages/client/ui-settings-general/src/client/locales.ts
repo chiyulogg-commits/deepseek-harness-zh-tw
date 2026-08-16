@@ -17,7 +17,7 @@ export const zhTw = {
   'openDocument': '開啟設定檔',
   'openDocument.error': '無法開啟設定檔',
   'general.nav': '通用設定',
-} satisfies Record<string, string>
+} satisfies Record<SettingsKey, string>
 
 /** The settings namespace key union. */
 export type SettingsKey = keyof typeof zh

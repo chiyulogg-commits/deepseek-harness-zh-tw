@@ -118,7 +118,7 @@ export const zhTw = {
   'status.running': '進行中',
   'status.subagentsRunning.one': '{n} 個子代理執行中',
   'status.subagentsRunning.other': '{n} 個子代理執行中',
-  'status.idle': '空閒',
+  'status.idle': '閒置',
   'status.waitingApproval': '等待核准',
   'status.planReview': '計劃待審',
   'status.waitingAnswer': '等待回答',
@@ -133,7 +133,7 @@ export const zhTw = {
   'time.months': '{n}個月',
   'time.years': '{n}年',
   'time.ago': '{t}前',
-} satisfies Record<string, string>
+} satisfies Record<WorkspaceKey, string>
 
 /** The workspace namespace key union. */
 export type WorkspaceKey = keyof typeof zh

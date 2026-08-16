@@ -1,3 +1,5 @@
+import type { CommonKey } from './zh.ts'
+
 /** Taiwan Traditional Chinese base dictionary for the common namespace: cross-feature standard words. */
 export const zhTw = {
   'ok': '確定',
@@ -24,4 +26,4 @@ export const zhTw = {
   'unknown': '未知',
   'none': '無',
   'truncated': '已截斷',
-} satisfies Record<string, string>
+} satisfies Record<CommonKey, string>

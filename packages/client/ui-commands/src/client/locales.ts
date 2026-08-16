@@ -19,7 +19,7 @@ export const zhTw = {
   'status.empty': '無選項',
   'overlay.aria': '/{command} 選項',
   'listbox.aria': '/{command} 相符項',
-} satisfies Record<string, string>
+} satisfies Record<CommandKey, string>
 
 /** The command namespace key union. */
 export type CommandKey = keyof typeof zh

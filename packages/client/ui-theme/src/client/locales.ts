@@ -13,7 +13,7 @@ export const zhTw = {
   'appearance.light': '淺色',
   'appearance.dark': '深色',
   'appearance.system': '跟隨系統',
-} satisfies Record<string, string>
+} satisfies Record<ThemeKey, string>
 
 /** The settings.theme namespace key union. */
 export type ThemeKey = keyof typeof zh

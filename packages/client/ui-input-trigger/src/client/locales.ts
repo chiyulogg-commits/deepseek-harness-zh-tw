@@ -19,7 +19,7 @@ export const zhTw = {
   'subagent': '子代理',
   'loading': '正在載入…',
   'suggestions.aria': '觸發候選建議',
-} satisfies Record<string, string>
+} satisfies Record<MenuKey, string>
 
 /** The slash.menu namespace key union. */
 export type MenuKey = keyof typeof zh

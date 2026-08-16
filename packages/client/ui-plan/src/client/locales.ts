@@ -13,7 +13,7 @@ export const zhTw = {
   'chip.on.title': 'plan mode 已開啟 — 點選關閉（/plan off）',
   'chip.off.aria': 'plan mode 已關閉，按下開啟',
   'chip.off.title': 'plan mode 已關閉 — 點選開啟（/plan）',
-} satisfies Record<string, string>
+} satisfies Record<PlanKey, string>
 
 /** The plan namespace key union. */
 export type PlanKey = keyof typeof zh

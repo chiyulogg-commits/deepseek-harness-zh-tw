@@ -200,7 +200,7 @@ export const zhTw = {
   'placeholder.default': '給代理發訊息',
   'placeholder.unavailable': '會話無法使用',
   'placeholder.parentOffline': '父會話已離線，無法繼續傳送；仍可停止當前執行',
-  'placeholder.hero': '描述你想要構建的內容',
+  'placeholder.hero': '描述你想要建置的內容',
   'placeholder.workspace': '選擇一個工作區開始',
   'input.commands': '指令',
   'input.stop': '停止生成',
@@ -369,7 +369,7 @@ export const zhTw = {
   'json.truncated': '… 已截斷，共 {total} 字元',
   'clock.md': '{m}月{d}日',
   'clock.ymd': '{y}年{m}月{d}日',
-} satisfies Record<string, string>
+} satisfies Record<ConversationKey, string>
 
 /** The conversation namespace key union. */
 export type ConversationKey = keyof typeof zh

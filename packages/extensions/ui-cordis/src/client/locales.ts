@@ -105,7 +105,7 @@ export const zhTw = {
   'body.output': '結果',
   'body.copy': '複製',
   'body.copied': '已複製',
-} satisfies Record<string, string>
+} satisfies Record<CordisKey, string>
 
 /** Translation keys owned by the Cordis UI namespace. */
 export type CordisKey = keyof typeof zh

@@ -128,8 +128,8 @@ export const zhTw: Record<PluginsSettingsLocaleKey, string> = {
   webSearchApiKeyHint: '不寫入設定檔案。留空表示保持當前金鑰。',
   webSearchApiKeySet: '已設定金鑰。',
   webSearchApiKeyUnset: '未設定金鑰；設定之前搜尋無法使用。',
-  webSearchBaseUrl: '介面地址',
-  webSearchBaseUrlHint: '留空則使用提供方預設地址。',
+  webSearchBaseUrl: '介面位址',
+  webSearchBaseUrlHint: '留空則使用提供方預設位址。',
   webSearchMaxUses: '單次請求最多搜尋次數',
   webSearchMaxUsesHint: '一次請求在必須作答前最多可以搜尋多少次。',
 }

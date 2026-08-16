@@ -18,7 +18,7 @@ export const zhTw = {
   'row.stopped': 'skill 載入已中止',
   'row.instructions': '說明',
   'menu.userOnly': '僅使用者',
-} satisfies Record<string, string>
+} satisfies Record<SkillKey, string>
 
 /** The skill namespace key union. */
 export type SkillKey = keyof typeof zh

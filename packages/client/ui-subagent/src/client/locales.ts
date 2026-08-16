@@ -73,7 +73,7 @@ export const zhTw = {
   'readonly.oneShot.title': '一次性子代理記錄',
   'readonly.title': '此子代理暫時唯讀',
   'readonly.oneShot.body': '一次性任務不支援後續訊息，可在這裡檢視完整執行記錄。',
-  'readonly.body': '父會話當前不線上，重新開啟父會話後即可繼續傳送訊息。',
+  'readonly.body': '父會話當前離線，重新開啟父會話後即可繼續傳送訊息。',
 } as const
 
 /** English dictionary, key-identical to the Chinese source of truth. */

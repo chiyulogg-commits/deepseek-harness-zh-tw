@@ -47,7 +47,7 @@ export const zhTw = {
   'empty.models': '沒有可用的模型。',
   'blocked.composer': '當前模型無法使用，請先選擇模型',
   'empty.efforts': '當前模型未提供推理等級。',
-} satisfies Record<string, string>
+} satisfies Record<ModelKey, string>
 
 /** The model namespace key union. */
 export type ModelKey = keyof typeof zh

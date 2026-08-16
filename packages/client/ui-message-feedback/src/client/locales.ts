@@ -25,11 +25,11 @@ export const zhTw = {
   'note.placeholder': '這條回答哪裡好，或哪裡有問題？（可選）',
   'note.save': '儲存',
   'note.cancel': '取消',
-  'note.aria': '反饋說明',
-  'error.conflict': '這條反饋已在別處改動，已顯示最新狀態',
-  'error.load': '反饋狀態載入失敗',
-  'error.generic': '反饋儲存失敗',
-} satisfies Record<string, string>
+  'note.aria': '回饋說明',
+  'error.conflict': '這條回饋已在別處改動，已顯示最新狀態',
+  'error.load': '回饋狀態載入失敗',
+  'error.generic': '回饋儲存失敗',
+} satisfies Record<MessageFeedbackKey, string>
 
 /** The feedback namespace key union. */
 export type MessageFeedbackKey = keyof typeof zh

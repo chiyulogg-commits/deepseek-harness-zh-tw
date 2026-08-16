@@ -27,7 +27,7 @@ export const zhTw = {
   'action.resume': '恢復目標',
   'action.edit': '編輯目標',
   'action.clear': '清除目標',
-} satisfies Record<string, string>
+} satisfies Record<GoalKey, string>
 
 /** The goal namespace key union. */
 export type GoalKey = keyof typeof zh
