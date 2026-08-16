@@ -189,7 +189,7 @@ export const zh = {
   'clock.ymd': '{y}年{m}月{d}日',
 } satisfies Record<string, string>
 
-const PLAN_NEXT_ACTION_ZH_TW = '描述你的任務以生成計劃'
+const PLAN_NEXT_ACTION_ZH_TW = '描述你的任務以生成計畫'
 
 export const zhTw = {
   'view.chat': '對話',
@@ -284,7 +284,7 @@ export const zhTw = {
   'message.context.catalog.more': '…還有 {count} 則',
   'message.context.snapshot.supersedes': '取代先前的快照',
   'message.context.relay.from': '來自會話 {session}',
-  'message.context.recall.counts': '保留 {retained} 條 · 省略 {omitted} 條',
+  'message.context.recall.counts': '保留 {retained} 則 · 省略 {omitted} 則',
   'message.context.recall.truncated': '已截斷',
   'message.compaction': '上下文已壓縮',
   'message.compaction.running': '正在壓縮…',
@@ -364,7 +364,7 @@ export const zhTw = {
   'diff.collapseAria': '收起差異',
   'diff.expandAria': '展開其餘 {n} 行差異',
   'web.empty': '未找到結果',
-  'web.sourcesTruncated': '來源列表已截斷',
+  'web.sourcesTruncated': '來源清單已截斷',
   'web.contentTruncated': '內容已截斷',
   'json.truncated': '… 已截斷，共 {total} 字元',
   'clock.md': '{m}月{d}日',

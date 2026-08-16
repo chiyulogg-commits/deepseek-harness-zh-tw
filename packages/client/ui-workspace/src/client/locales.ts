@@ -120,7 +120,7 @@ export const zhTw = {
   'status.subagentsRunning.other': '{n} 個子代理執行中',
   'status.idle': '閒置',
   'status.waitingApproval': '等待核准',
-  'status.planReview': '計劃待審',
+  'status.planReview': '計畫待審',
   'status.waitingAnswer': '等待回答',
   'status.completed': '已完成',
   'hover.created': '建立於 {time}',

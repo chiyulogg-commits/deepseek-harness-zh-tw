@@ -19,7 +19,7 @@ export const WELCOME_NOTICE_COPY = {
   },
   zhTw: {
     title: '內測聲明',
-    body: 'DeepSeek Harness 目前的 0.1 版本仍處在面向 Harness 開發者進行測試的階段，還有許多地方需要持續改進與打磨，期望聽取廣大開發者的回饋建議。預計 DeepSeek Harness 的核心插件以及基礎 API 都會在接下來的一段時間內快速迭代、持續演化。\n\n我們期待與全球開發者一起，在開源、開放、可重用、可組合的基礎設施之上，共同探索智慧的上限。歡迎全球 Harness 開發者加入 DSH 插件生態。',
+    body: 'DeepSeek Harness 目前的 0.1 版本仍處在面向 Harness 開發者進行測試的階段，還有許多地方需要持續改進與打磨，期望聽取廣大開發者的回饋建議。預計 DeepSeek Harness 的核心插件以及基礎 API 都會在接下來的一段時間內快速迭代、持續演化。\n\n我們期待與全球開發者一起，在開源、開放、可重複使用、可組合的基礎設施之上，共同探索智慧的上限。歡迎全球 Harness 開發者加入 DSH 插件生態。',
     continueLabel: '繼續',
   },
   en: {

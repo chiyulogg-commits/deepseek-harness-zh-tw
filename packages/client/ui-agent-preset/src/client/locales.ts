@@ -155,7 +155,7 @@ export const zhTw: Record<AgentPresetSettingsKey, string> = {
   setDefault: '設為預設',
   view: '檢視',
   presetStandardName: '標準模式',
-  presetStandardDescription: '功能完整的編碼 Agent，支援檔案編輯、Shell、檔案與網頁檢索、Skills、計劃、目標、子代理和工作流。',
+  presetStandardDescription: '功能完整的編碼 Agent，支援檔案編輯、Shell、檔案與網頁檢索、Skills、計畫、目標、子代理和工作流程。',
   presetCodeName: 'PTC 模式',
   presetCodeDescription: '具備標準模式的全部能力，並透過 Code Mode SDK 呈現工具，讓模型用一個 TypeScript 程式組合多步操作。',
   presetMinimalName: '極簡模式',

@@ -27,7 +27,7 @@ export const zhTw = {
   'custom.placeholder': '輸入你的答案',
   'action.skip': '跳過本題',
   'action.next': '下一題',
-  'plan.header': '計劃待審',
+  'plan.header': '計畫待審',
   'plan.approve': '確認執行',
   'plan.decline': '拒絕',
   'plan.discuss': '去聊天裡說',

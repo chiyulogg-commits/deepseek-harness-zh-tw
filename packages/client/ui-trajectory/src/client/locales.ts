@@ -47,7 +47,7 @@ export const zh: Record<TrajectoryKey, string> = {
 
 export const zhTw: Record<TrajectoryKey, string> = {
   'view.trajectory': '軌跡',
-  'toolbar.aria': '軌跡工具欄',
+  'toolbar.aria': '軌跡工具列',
   'toolbar.duration': 'Duration',
   'toolbar.useActualDuration': 'Use actual duration',
   'toolbar.useEqualWidth': 'Use equal-width operations',
